@@ -1,8 +1,8 @@
 {
-  "name": "secretsmgmt",
-  "version": "1.0.0",
+  "name": "secret-pipes",
+  "version": "0.1.0",
   "description": "Example of Managing Secrets with node.js",
-  "main": "exampleServer.js",
+  "main": "secret.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +12,13 @@
     "encryption",
     "vault"
   ],
-  "author": "Joshua Hemphill",
+  "author": {
+    "name":"Joshua Hemphill",
+    "email": "jhemphill@tecnicocorp.com",
+    "url": "https://tecnicocorp.com"
+  },
+  "contributors":[
+    "Tecnico Corporation"
+  ],
   "license": "ISC"
 }
