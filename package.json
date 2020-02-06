@@ -4,7 +4,7 @@
   "description": "Example of Managing Secrets with node.js",
   "main": "secret.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node secret.js"
   },
   "keywords": [
     "security",
@@ -20,5 +20,5 @@
   "contributors":[
     "Tecnico Corporation"
   ],
-  "license": "ISC"
+  "license": "GPLv3"
 }
