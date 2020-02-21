@@ -19,6 +19,7 @@ Most of the code is just here to provide a examples and a basic starting point. 
 
 	# Place js scripts that export your secrets in ./secure
 ```
+#### NPM module is WIP
 <br />
 
 ## Usage
@@ -42,6 +43,7 @@ Most of the code is just here to provide a examples and a basic starting point. 
 
 ### Application Imports
 ```js
+	// main.js or server.js or index.js
 	'use strict';
 	const fs = require('fs');
 	let envTmp = fs.readFileSync(0).toString();
@@ -53,4 +55,49 @@ Most of the code is just here to provide a examples and a basic starting point. 
 	envTmp.mySecret2 = undefined;
 ```
 
+### Node Execution
+```bash
+	# NPM start
+	node ..\\secret-pipes\\secret.js | node server.js
+	# NPM dev - Known issues with nodemon, see known issues
+	nodemon -e js --exec \"node ..\\secret-pipes\\secret.js | node server.js\"
+```
+#### Run in debug
+##### VS Code `lauch.json` in Windows batch
+```json
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Run DEV",
+			"runtimeExecutable": "${workspaceRoot}/run.bat"
+		},
+	]
+```
+```bat
+	ECHO OFF
+	node ..\secret-pipes\secret.js | node --inspect-brk=127.0.0.1:%2 server.js
+```
+##### VS Code `lauch.json` in Linux Bash
 
+
+```json
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Run DEV",
+			"runtimeExecutable": "${workspaceRoot}/run.sh"
+		},
+	]
+```
+```sh
+	#!/bin/bash
+	node ..\secret-pipes\secret.js | node --inspect-brk=127.0.0.1:%2 server.js
+```
+
+## Known Issues
+ - Nodemon:
+ Running in Nodemon seems to cause something to get cached such that if an error is thrown to Nodemon on a reload, it returns `fs` module errors until it is closed and some indeterminate amount of time passes before being started again. (The issue will be linked if this assertion holds true after an initial review)

@@ -1,49 +1,49 @@
 module.exports = {
-    "env": {
-        "commonjs": true,
-        "es6": true,
-        "node": true
+    'env': {
+        'commonjs': true,
+        'es6': true,
+        'node': true
     },
-    "extends": "eslint:recommended",
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+    'extends': 'eslint:recommended',
+    'globals': {
+        'Atomics': 'readonly',
+        'SharedArrayBuffer': 'readonly'
     },
-    "parserOptions": {
-        "ecmaVersion": 2019,
-        "sourceType":"script"
+    'parserOptions': {
+        'ecmaVersion': 2019,
+        'sourceType':'script'
     },
-    "rules": {
-        "quotes": [
-          "warn",
-          "single",
+    'rules': {
+        'quotes': [
+          'warn',
+          'single',
           {
-            "avoidEscape": true,
-            "allowTemplateLiterals": true
+            'avoidEscape': true,
+            'allowTemplateLiterals': true
           }
         ],
-        "strict": [
-          "warn",
-          "global"
+        'strict': [
+          'warn',
+          'global'
         ],
-        "eqeqeq": "off",
-        "no-console": "warn",
-        "semi": [
-          "warn",
-          "always",
+        'eqeqeq': 'warn',
+        'no-console': 'warn',
+        'semi': [
+          'warn',
+          'always',
           {
-            "omitLastInOneLineBlock": true
+            'omitLastInOneLineBlock': true
           }
         ],
-        "no-template-curly-in-string": "warn",
-        "indent": [
-          "warn",
-          4
+        'no-template-curly-in-string': 'warn',
+        'indent': [
+          'warn',
+          'tab'
         ],
-        "no-tabs": [
-          "warn",
+        'no-tabs': [
+          'warn',
           {
-            "allowIndentationTabs": true
+            'allowIndentationTabs': true
           }
         ]
     }
