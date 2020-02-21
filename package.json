@@ -4,7 +4,7 @@
   "description": "Example of Managing Secrets with node.js",
   "main": "secret.js",
   "scripts": {
-    "test": "node secret.js"
+    "test": "node secret.js > secure/test.json"
   },
   "keywords": [
     "security",
