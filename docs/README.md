@@ -8,12 +8,27 @@ As the name suggests,  `SECRET-PIPES` is a framwork to keep, manage, and aggriga
 
 Most of the code is just here to provide a examples and a basic starting point. <br /> Customize it and make it your own; implement runtime generation of your secrets, pull them from from encrypted vaults, and/or set up conditions to pass different secrets for different environments.
 
-Use `git clone` or `npm` to get notified of changes to best practices and security changes/vulnerabilities. Or you can completely replicate this in a few lines of code.
+Use `git` or `npm` to get notified of changes to best practices and security changes/vulnerabilities. Or you can completely replicate this in a few lines of code.
 
-<br />
+## Table of Contents
+
+- [Installation](#Installation)
+	- [git](#Git)
+	- [npm/yarn](#NPM%20module%20is%20WIP)
+	- [npx](#NPM%20module%20is%20WIP)
+- [Usage](#Usage)
+	- [Secrets](#Secrets%20Files)
+	- [App Import](#Application%20Imports)
+	- [Run](#Node%20Execution)
+	- [Debug](#Run%20in%20Debug)
+- [Examples](./docs/)
+- [Known Issues](#Known%20Issues)
+- [Contributing](./CONTRIBUTING.md)
+- [Security Policy](./SECURITY.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ## Installation
-
+#### Git
 ```bash
 	cd /some/protected/directory
 
@@ -64,7 +79,7 @@ Use `git clone` or `npm` to get notified of changes to best practices and securi
 	# NPM dev - Known issues with nodemon, see known issues
 	nodemon -e js --exec \"node ..\\secret-pipes\\secret.js | node server.js\"
 ```
-#### Run in debug
+#### Run in Debug
 ##### VS Code `lauch.json` in Windows batch
 ```json
 	"version": "0.2.0",
