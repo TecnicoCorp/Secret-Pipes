@@ -1,6 +1,6 @@
 # Secret-Pipes
 #### Application Secrets Management and Isolation
-#### For Node.js and other JS projects
+#### For Node.js projects, or any software accepting STDIN
 
 #
 
