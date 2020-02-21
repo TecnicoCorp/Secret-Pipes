@@ -8,6 +8,8 @@ As the name suggests,  `SECRET-PIPES` is a framwork to keep, manage, and aggriga
 
 Most of the code is just here to provide a examples and a basic starting point. <br /> Customize it and make it your own; implement runtime generation of your secrets, pull them from from encrypted vaults, and/or set up conditions to pass different secrets for different environments.
 
+Use `git clone` or `npm` to get notified of changes to best practices and security changes/vulnerabilities. Or you can completely replicate this in a few lines of code.
+
 <br />
 
 ## Installation
