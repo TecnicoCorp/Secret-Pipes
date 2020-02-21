@@ -21,11 +21,11 @@ Use `git` or `npm` to get notified of changes to best practices and security cha
 	- [App Import](#Application%20Imports)
 	- [Run](#Node%20Execution)
 	- [Debug](#Run%20in%20Debug)
-- [Examples]($/docs/)
+- [Examples](/docs/)
 - [Known Issues](#Known%20Issues)
-- [Contributing](./CONTRIBUTING.md)
-- [Security Policy](./SECURITY.md)
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Contributing](/docs/CONTRIBUTING.md)
+- [Security Policy](/docs/SECURITY.md)
+- [Code of Conduct](/docs/CODE_OF_CONDUCT.md)
 
 ## Installation
 #### Git
@@ -75,9 +75,9 @@ Use `git` or `npm` to get notified of changes to best practices and security cha
 ### Node Execution
 ```bash
 	# NPM start
-	node ..\\secret-pipes\\secret.js | node server.js
+	node ..\\secret-pipes\\lib\\secret.js | node server.js
 	# NPM dev - Known issues with nodemon, see known issues
-	nodemon -e js --exec \"node ..\\secret-pipes\\secret.js | node server.js\"
+	nodemon -e js --exec \"node ..\\secret-pipes\\lib\\secret.js | node server.js\"
 ```
 #### Run in Debug
 ##### VS Code `lauch.json` in Windows batch
