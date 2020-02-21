@@ -21,7 +21,7 @@ Use `git` or `npm` to get notified of changes to best practices and security cha
 	- [App Import](#Application%20Imports)
 	- [Run](#Node%20Execution)
 	- [Debug](#Run%20in%20Debug)
-- [Examples](./docs/)
+- [Examples]($/docs/)
 - [Known Issues](#Known%20Issues)
 - [Contributing](./CONTRIBUTING.md)
 - [Security Policy](./SECURITY.md)
