@@ -15,11 +15,11 @@ Use `git` or `npm` to get notified of changes to best practices and security cha
 | :-------: | :-------: | :-------: | :-------: |
 | Generate new secrets at runtime | :heavy_check_mark: | :x: | :x: |
 | Aggrigate External Sources | :heavy_check_mark: | :x: | :x: |
+| Seperate Concerns By Process | :heavy_check_mark: | :x: | :x: |
+| Reduce global references | :heavy_check_mark: | :x: | :x: |
 | Encrypt Secrets at Rest  | :heavy_check_mark: | :wavy_dash: | :wavy_dash: |
 | Restrict files with User/Group Permissions | :heavy_check_mark: | :wavy_dash: | :wavy_dash: |
-| Reduce global references | :heavy_check_mark: | :x: | :x: |
-| Dereference/Remove secrets from memory if no longer needed | :heavy_check_mark: | :x: | :x: |
-| Seperate Concerns By Process | :heavy_check_mark: | :x: | :x: |
+| Dereference/Remove secrets from memory if no longer needed | :heavy_check_mark: | :wavy_dash: | :wavy_dash: |
 
 ##### Plans: Finding a means to place the secrets into protected memory, and only pass references/pointer and read permissions.
 
