@@ -21,7 +21,7 @@ Use `git` or `npm` to get notified of changes to best practices and security cha
 | Restrict files with User/Group Permissions | :heavy_check_mark: | :wavy_dash: | :wavy_dash: |
 | Dereference/Remove secrets from memory if no longer needed | :heavy_check_mark: | :wavy_dash: | :wavy_dash: |
 
-##### ToDo:
+#### ToDo:
 - [ ] Add cli entrypoint for password encrypting secrets natively
 - [ ] NPM/CLI to Init directories/permissions
 - [ ] Find a means to place the secrets into protected memory, and only pass references/pointer and read permissions.
