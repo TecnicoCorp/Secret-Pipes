@@ -1,20 +1,28 @@
 module.exports = {
-    'env': {
-        'commonjs': true,
-        'es6': true,
-        'node': true
+    env: {
+        commonjs: true,
+        es6: true,
+        node: true
     },
-    'extends': 'eslint:recommended',
-    'globals': {
-        'Atomics': 'readonly',
-        'SharedArrayBuffer': 'readonly'
+    extends: [
+      'eslint:recommended',
+      'plugin:security/recommended'
+    ],
+    plugins: [
+      'security'
+    ],
+    globals: {
+        Atomics: 'readonly',
+        SharedArrayBuffer: 'readonly'
     },
-    'parserOptions': {
-        'ecmaVersion': 2019,
-        'sourceType':'script'
+    parserOptions: {
+        ecmaVersion: 2019,
+        sourceType:'script'
     },
-    'rules': {
-        'quotes': [
+    rules: {
+        'detect-non-literal-fs-filename': [0],
+        'detect-non-literal-require': [0],
+        quotes: [
           'warn',
           'single',
           {
@@ -22,13 +30,13 @@ module.exports = {
             'allowTemplateLiterals': true
           }
         ],
-        'strict': [
+        strict: [
           'warn',
           'global'
         ],
-        'eqeqeq': 'warn',
+        eqeqeq: 'warn',
         'no-console': 'warn',
-        'semi': [
+        semi: [
           'warn',
           'always',
           {
@@ -36,7 +44,7 @@ module.exports = {
           }
         ],
         'no-template-curly-in-string': 'warn',
-        'indent': [
+        indent: [
           'warn',
           'tab'
         ],

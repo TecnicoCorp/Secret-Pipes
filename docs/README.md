@@ -2,13 +2,28 @@
 #### Application Secrets Management and Isolation
 #### For Node.js projects, or any software accepting STDIN
 
-#
 
 As the name suggests,  `SECRET-PIPES` is a framwork to keep, manage, and aggrigate your secrets in an evironment only accessable to an elevated user, and only pipe your secrets at runtime to keep them as ephemiral as possile on your system and in your target application.
 
 Most of the code is just here to provide a examples and a basic starting point. <br /> Customize it and make it your own; implement runtime generation of your secrets, pull them from from encrypted vaults, and/or set up conditions to pass different secrets for different environments.
 
 Use `git` or `npm` to get notified of changes to best practices and security changes/vulnerabilities. Or you can completely replicate this in a few lines of code.
+
+#### Benefits over ENV or uncommited JSON files
+
+| Feature  | Secret-Pipes | ENV/.ENV | Static Imports |
+| :-------: | :-------: | :-------: | :-------: |
+| Generate new secrets at runtime | :heavy_check_mark: | :x: | :x: |
+| Aggrigate External Sources | :heavy_check_mark: | :x: | :x: |
+| Encrypt Secrets at Rest  | :heavy_check_mark: | :wavy_dash: | :wavy_dash: |
+| Restrict files with User/Group Permissions | :heavy_check_mark: | :wavy_dash: | :wavy_dash: |
+| Reduce global references | :heavy_check_mark: | :x: | :x: |
+| Dereference/Remove secrets from memory if no longer needed | :heavy_check_mark: | :x: | :x: |
+| Seperate Concerns By Process | :heavy_check_mark: | :x: | :x: |
+
+##### Plans: Finding a means to place the secrets into protected memory, and only pass references/pointer and read permissions.
+
+#
 
 ## Table of Contents
 
@@ -21,7 +36,7 @@ Use `git` or `npm` to get notified of changes to best practices and security cha
 	- [App Import](#Application%20Imports)
 	- [Run](#Node%20Execution)
 	- [Debug](#Run%20in%20Debug)
-- [Examples](/docs/)
+- [Examples](/docs/Examples.md)
 - [Known Issues](#Known%20Issues)
 - [Contributing](/docs/CONTRIBUTING.md)
 - [Security Policy](/docs/SECURITY.md)

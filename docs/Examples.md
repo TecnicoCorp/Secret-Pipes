@@ -1,3 +1,10 @@
+# Examples
+
+ - [Node Server.js](#Target%20Server%20Application)
+ - [Secrets.js Secrets Export](#Secrets%20Files)
+
+### Target Server Application
+```js
 'use strict';
 const fs = require('fs');
 const env = (function () {
@@ -31,3 +38,27 @@ apiReq.interceptors.request.use(function (config) {
 	}
 	return config;
 });
+```
+
+### Secrets Files
+```js
+'use strict';
+exports.default = {
+	'DB CREDENTIAL STRING':'supersecret',
+	apiHeaders: {
+		'url match': {
+			'X-API-KEY':''
+		}
+	},
+	apiQueryExt: {
+		'url match': [
+			''
+		]
+	},
+	certs: [
+		''
+	],
+	'PRIV_KEY':``,
+	'PUB_KEY':``,
+};
+```

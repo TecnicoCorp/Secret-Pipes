@@ -14,12 +14,19 @@
     "vault"
   ],
   "author": {
-    "name":"Joshua Hemphill",
-    "email": "jhemphill@tecnicocorp.com",
+    "name": "Joshua Hemphill",
+    "email": "support@tecnicocorp.com",
     "url": "https://tecnicocorp.com"
   },
-  "contributors":[
+  "contributors": [
     "Tecnico Corporation"
   ],
-  "license": "MIT"
+  "files": [
+    "lib/secret.js",
+    "build/*"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-plugin-security": "^1.4.0"
+  }
 }

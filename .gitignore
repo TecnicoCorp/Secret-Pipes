@@ -1,2 +1,6 @@
+node_modules
 lib/secure/*js
 lib/secure/*json
+secure/*js
+secure/*json
+build/secure/*
